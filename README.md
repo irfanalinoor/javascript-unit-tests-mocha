@@ -1,6 +1,6 @@
-# JavaScript Unit Testing
+## JavaScript Unit Testing
 
-## Overview
+### Overview
 * This is a simple project to showcase Unit Tests in JavaScript using Mocha/Chai and Stubs
 * **Skills:** Unit Testing using Stub
 * **Languages:** JavaScript
@@ -10,7 +10,7 @@
 * **CI/CD:** CircleCI  [![CircleCI](https://circleci.com/gh/irfanalinoor/javascript-unit-tests-mocha.svg?style=svg)](https://circleci.com/gh/irfanalinoor/javascript-unit-tests-mocha)
 
 
-## Setup
+### Setup
 - Download [javascript-unit-tests-mocha](https://github.com/irfanalinoor/javascript-unit-tests-mocha) project repo from GitHub
 - Install latest [Node.JS](https://nodejs.org/en/download/)
 - Install [Git](https://git-scm.com/downloads)
@@ -20,7 +20,7 @@
 - Run App `npm start` (dry run)
 - Run Unit Tests `npm test`
 
-## Unit Tests 
+### Unit Tests 
     Unit Test for UserController Class
     When ISOLATED (Stubbed)
       ✓ Verify Keys of 'getAll' JSON Output - Stubbed
@@ -37,7 +37,7 @@
       ✓ Verify 'username' is STRING in 'getAll' JSON Output - Stubbed
       ✓ Verify 'email' is STRING in 'getAll' JSON Output - Stubbed
 
-## Continuous Integration
+### Continuous Integration
 
 - CircleCI - Config.yml
 
