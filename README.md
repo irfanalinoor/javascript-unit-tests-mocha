@@ -1,7 +1,6 @@
-# Simple JS Unit Test 
+# Simple JS Unit Test [![CircleCI](https://circleci.com/gh/irfanalinoor/javascript-unit-tests-mocha.svg?style=svg)](https://circleci.com/gh/irfanalinoor/javascript-unit-tests-mocha)
 
-### Requirements
-Be sure to use `node >= 9` 
+
 
 
 ### Installation
