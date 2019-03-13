@@ -41,28 +41,28 @@
 
 - CircleCI - Config.yml
 
-version: 2
-jobs:
-  build:
-    working_directory: ~/javascript-unit-tests-mocha
-    docker:
-      - image: circleci/node:8.0
-      - image: mongo:3.4.4
-    steps:
-      - run:
-          name: "Checking NodeJs + NPM Version"
-          command: |
-            node --version
-            npm --version
-      - checkout
-      - restore_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
-      - run:
-          name: Install NPM Packages
-          command: 'sudo npm install'
-      - run:
-          name: NPM Start
-          command: 'npm start'
-      - run:
-          name: Run Unit Tests
-          command: 'npm test'
+    version: 2
+    jobs:
+      build:
+        working_directory: ~/javascript-unit-tests-mocha
+        docker:
+          - image: circleci/node:8.0
+          - image: mongo:3.4.4
+        steps:
+          - run:
+              name: "Checking NodeJs + NPM Version"
+              command: |
+                node --version
+                npm --version
+          - checkout
+          - restore_cache:
+              key: dependency-cache-{{ checksum "package.json" }}
+          - run:
+              name: Install NPM Packages
+              command: 'sudo npm install'
+          - run:
+              name: NPM Start
+              command: 'npm start'
+          - run:
+              name: Run Unit Tests
+              command: 'npm test'
