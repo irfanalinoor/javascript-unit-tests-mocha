@@ -41,7 +41,7 @@
 
 - CircleCI - Config.yml
 
-    version: 2
+`version: 2
     jobs:
       build:
         working_directory: ~/javascript-unit-tests-mocha
@@ -65,4 +65,4 @@
               command: 'npm start'
           - run:
               name: Run Unit Tests
-              command: 'npm test'
+              command: 'npm test'`
